@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<style>
+    header {
+        height: 75px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    #nav-left-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    #nav-right-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto auto;
+        grid-column-gap: 20px;
+    }
+
+    main {
+        text-align: center;
+    }
+
+</style>
+<header>
+    <nav id="navbar">
+        <div id="nav-left-grid">
+            <a class="nav-link" href="" id="about-link">About</a>
+            <a class="nav-link" href="" id="store-link">Store</a>
+        </div>
+        <div id="nav-right-grid">
+            <a class="nav-link" href="" id="gmail-link">Gmail</a>
+            <a class="nav-link" href="" id="images-link">Images</a>
+            <a class="nav-link" href="" id="apps-link"><img id="apps-image" src="https://cdn.icon-icons.com/icons2/933/PNG/512/show-apps-button_icon-icons.com_72551.png"></a>
+            <a class="nav-link" href="" id="account-link"></a>
+        </div>
+    </nav>
+</header>
+<main id="main-content">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <form id="search-form">
+        <input type="text" name="search" id="search-bar">
+        <input type="submit" placeholder="Google Search">
+        <input type="submit" placeholder="I'm Feeling Lucky">
+    </form>
+</main>
